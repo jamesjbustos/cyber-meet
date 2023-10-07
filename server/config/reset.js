@@ -1,5 +1,6 @@
 import { pool } from "../config/database.js";
-import events from "../data/events.js"; 
+import "../config/dotenv.js";
+import events from "../data/events.js";
 
 const createEventsTable = async () => {
   const createTableQuery = `
@@ -32,7 +33,15 @@ const seedEventsTable = async () => {
       text: "INSERT INTO events (name, type, topics, date, location, event_url, image_url) VALUES ($1, $2, $3, $4, $5, $6, $7)",
     };
 
-    const values = [event.name, event.type, event.topics, event.date, event.location, event.event_url, event.image_url];
+    const values = [
+      event.name,
+      event.type,
+      event.topics,
+      event.date,
+      event.location,
+      event.event_url,
+      event.image_url,
+    ];
 
     pool.query(insertQuery, values, (err, res) => {
       if (err) {
