@@ -4,6 +4,7 @@ import favicon from "serve-favicon";
 import dotenv from "dotenv";
 
 // import the router from your routes file
+import eventsRouter from "./routes/events.js";
 
 dotenv.config();
 
@@ -14,13 +15,14 @@ const app = express();
 app.use(express.json());
 
 if (process.env.NODE_ENV === "development") {
-  app.use(favicon(path.resolve("../", "client", "public", "favicon.png")));
+  app.use(favicon(path.resolve("../", "client", "public", "ticket.png")));
 } else if (process.env.NODE_ENV === "production") {
-  app.use(favicon(path.resolve("public", "favicon.png")));
+  app.use(favicon(path.resolve("public", "ticket.png")));
   app.use(express.static("public"));
 }
 
 // specify the api path for the server to use
+app.use("/api", eventsRouter);
 
 if (process.env.NODE_ENV === "production") {
   app.get("/*", (_, res) => res.sendFile(path.resolve("public", "index.html")));
