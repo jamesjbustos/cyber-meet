@@ -5,11 +5,19 @@
   "scripts": {
     "dev": "concurrently \"cd client && vite\" \"cd server && nodemon server\"",
     "start": "cd server && node server",
+    "reset": "cd server/config && node --require dotenv/config reset.js",
     "build": "cd client && vite build"
   },
   "dependencies": {
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
