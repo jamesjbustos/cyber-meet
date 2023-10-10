@@ -12,6 +12,7 @@ const createEventsTable = async () => {
       topics VARCHAR(255) NOT NULL,
       date VARCHAR(255) NOT NULL,  -- consider using DATE type if needed
       location VARCHAR(255) NOT NULL,
+      address VARCHAR(255) NOT NULL,
       event_url VARCHAR(255) NOT NULL,
       image_url VARCHAR(255) NOT NULL
     )
@@ -30,7 +31,7 @@ const seedEventsTable = async () => {
 
   events.forEach((event) => {
     const insertQuery = {
-      text: "INSERT INTO events (name, type, topics, date, location, event_url, image_url) VALUES ($1, $2, $3, $4, $5, $6, $7)",
+      text: "INSERT INTO events (name, type, topics, date, location, address, event_url, image_url) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
     };
 
     const values = [
@@ -39,6 +40,7 @@ const seedEventsTable = async () => {
       event.topics,
       event.date,
       event.location,
+      event.address,
       event.event_url,
       event.image_url,
     ];

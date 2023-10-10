@@ -2,6 +2,7 @@ import express from "express";
 import path from "path";
 import favicon from "serve-favicon";
 import dotenv from "dotenv";
+import "./config/dotenv.js";
 
 // import the router from your routes file
 import eventsRouter from "./routes/events.js";
@@ -22,7 +23,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 // specify the api path for the server to use
-app.use("/api", eventsRouter);
+app.use("/api/events", eventsRouter);
 
 if (process.env.NODE_ENV === "production") {
   app.get("/*", (_, res) => res.sendFile(path.resolve("public", "index.html")));
