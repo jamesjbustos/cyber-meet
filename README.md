@@ -1,10 +1,10 @@
-# WEB103 Project 3 - *Virtual Community Space – CyberMeet*
+# WEB103 Project 3 - _Virtual Community Space – CyberMeet_
 
 Submitted by: **James Bustos**
 
 About this web app: **This goal of this app is to connect individuals in the tech community with events in a simple and quick manner. The app features helpful filtering based on location, topics, date, type of event, and the availability of external links that navigate the user directly to the event page.**
 
-Time spent: **32** hours
+Time spent: **72** hours
 
 ## Required Features
 
@@ -12,22 +12,24 @@ The following **required** functionality is completed:
 
 <!-- Make sure to check off completed functionality below -->
 
-- [X] **The web app uses React to display data from the API**
-- [X] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
-  - [ ] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
-- [ ] **The web app displays the title of the app**
-- [ ] **A visual interface allows the user to select a Location they would like to view**
-- [ ] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
-- [ ] **Each Location detail page should have its own unique URL**
+- [x] **The web app uses React to display data from the API**
+- [x] **The web app is connected to a PostgreSQL database, with an appropriately structured Events table**
+  - [x] **NOTE: Your GIF or a screenshot added to this README must include a view of your Railway database that shows the contents of the table used by your app**
+- [x] **The web app displays the title of the app**
+- [x] **A visual interface allows the user to select a Location they would like to view**
+- [x] **Clicking on a Location shows a list of all items from the Events table that corresponds to that Location**
+- [x] **Each Location detail page should have its own unique URL**
 
 The following **optional** features are implemented:
 
-- [ ] An additional page shows all possible `Events` that the user can sort and filter by `Location`
+- [x] An additional page shows all possible `Events` that the user can sort and filter by `Location`
 - [ ] `Events` display a countdown showing the time remaining before that event and appears with different formatting when the event has passed
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you added to improve the site's functionality!
+- [x] Additional properties such as external url for event info
+- [x] A fun Globe UI in the homepage
+- [x] Filtering using buttons
 
 ## Video Walkthrough
 
@@ -36,6 +38,8 @@ Here's a walkthrough of implemented required features:
 ## Notes
 
 First submission of this application is not done yet, had a busy week with midterms and EES career fair meetings. Plan on finishing it saturday, Thank you!
+
+Update(10/10/23): Was able to finish the requirements, however, had some issues with the api but was able to resolve by debugging the endpoints. This project was very insightful and feel ready for the next one, Thank you.
 
 ## License
 
