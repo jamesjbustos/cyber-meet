@@ -35,6 +35,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
+https://github.com/jamesjbustos/cyber-meet/assets/45052719/27999701-01f5-4050-8fc5-d2363a17a152
+
 ## Notes
 
 First submission of this application is not done yet, had a busy week with midterms and EES career fair meetings. Plan on finishing it saturday, Thank you!
